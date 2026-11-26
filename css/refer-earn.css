@@ -1,0 +1,402 @@
+
+/* =========================================
+   SWASTIK ENTERPRISES - REFER & EARN STYLES
+   ========================================= */
+
+:root {
+    --refer-primary: #d97706;       /* Brand Orange / Amber */
+    --refer-primary-dark: #b45309;
+    --refer-secondary: #0f172a;     /* Deep Navy matching your Navbar */
+    --refer-slate: #1e293b;
+    --refer-green: #059669;         /* Reward / Money Green */
+    --refer-bg-light: #f8fafc;
+    --refer-bg-warm: #fffbeb;
+    --refer-text-dark: #0f172a;
+    --refer-text-muted: #475569;
+    --refer-border: #e2e8f0;
+    --refer-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Navbar Pill Button (Also add this to your main style.css) --- */
+.nav-links a.nav-refer-pill {
+    color: #fbbf24;
+    border: 1.5px solid var(--refer-primary);
+    background-color: rgba(217, 119, 6, 0.12);
+    padding: 7px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.nav-links a.nav-refer-pill:hover,
+.nav-links a.nav-refer-pill.active {
+    background-color: var(--refer-primary);
+    color: #ffffff;
+}
+
+/* --- Page Wrapper --- */
+.refer-page-wrapper {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--refer-text-dark);
+    background-color: var(--refer-bg-light);
+    line-height: 1.6;
+}
+
+.refer-page-wrapper .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Hero Section --- */
+/* =========================================
+   HERO SECTION (CENTERED & COLOR-MATCHED)
+   ========================================= */
+.refer-hero {
+    background: linear-gradient(180deg, #131c31 0%, #0b1120 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.refer-hero .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.refer-hero .badge {
+    display: inline-block;
+    background-color: rgba(217, 119, 6, 0.15);
+    color: #fbbf24;
+    border: 1px solid #d97706;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.refer-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 16px;
+    line-height: 1.25;
+}
+
+.refer-hero p {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.refer-hero p strong {
+    color: #fbbf24;
+}
+
+/* --- How It Works --- */
+.how-it-works {
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 1.9rem;
+    margin-bottom: 35px;
+    color: var(--refer-secondary);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.step-card {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--refer-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.step-num {
+    width: 42px;
+    height: 42px;
+    background: var(--refer-bg-warm);
+    color: var(--refer-primary);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    border: 2px solid var(--refer-primary);
+}
+
+.step-card h3 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    color: var(--refer-secondary);
+}
+
+.step-card p {
+    font-size: 0.92rem;
+    color: var(--refer-text-muted);
+    margin: 0;
+}
+
+/* --- Prize Pool Section --- */
+.prize-pool-section {
+    padding: 50px 0 60px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-header h2 {
+    font-size: 2.1rem;
+    color: var(--refer-secondary);
+    margin: 0 0 10px;
+}
+
+.section-header p {
+    color: var(--refer-text-muted);
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* Base Reward Banner */
+.base-reward-banner {
+    background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%);
+    border: 2px solid #f59e0b;
+    border-radius: 14px;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.base-amount {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--refer-primary-dark);
+}
+
+.base-amount span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--refer-text-muted);
+}
+
+.base-desc {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--refer-text-dark);
+}
+
+/* Milestones Grid */
+.milestones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.milestone-card {
+    background: #ffffff;
+    border: 1px solid var(--refer-border);
+    border-radius: 14px;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: var(--refer-shadow);
+    transition: transform 0.25s ease;
+}
+
+.milestone-card:hover {
+    transform: translateY(-5px);
+}
+
+.milestone-card.featured {
+    border: 2px solid var(--refer-primary);
+}
+
+.milestone-card.grand {
+    background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
+    border: 2px solid var(--refer-primary);
+}
+
+.popular-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--refer-primary);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.milestone-target {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--refer-secondary);
+    margin-bottom: 12px;
+}
+
+.milestone-bonus {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--refer-green);
+    line-height: 1.1;
+}
+
+.milestone-sub {
+    font-size: 0.85rem;
+    color: var(--refer-text-muted);
+    margin-bottom: 16px;
+}
+
+.total-earned {
+    background: var(--refer-bg-light);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--refer-text-dark);
+}
+
+/* Rules Box */
+.rules-box {
+    background: #ffffff;
+    border-left: 4px solid var(--refer-secondary);
+    padding: 24px 28px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.rules-box h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+    color: var(--refer-secondary);
+}
+
+.rules-box ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--refer-text-muted);
+    font-size: 0.95rem;
+}
+
+.rules-box li {
+    margin-bottom: 6px;
+}
+
+/* --- Lower Section: Partner Login CTA --- */
+.partner-login-section {
+    padding: 20px 0 80px;
+}
+
+.login-card {
+    background: linear-gradient(135deg, var(--refer-slate) 0%, var(--refer-secondary) 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 16px;
+    box-shadow: var(--refer-shadow);
+}
+
+.login-card h2 {
+    font-size: 2rem;
+    margin: 0 0 12px;
+}
+
+.login-card p {
+    color: #cbd5e1;
+    max-width: 580px;
+    margin: 0 auto 28px;
+    font-size: 1.05rem;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.refer-btn-primary,
+.refer-btn-secondary {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.refer-btn-primary {
+    background-color: var(--refer-primary);
+    color: #ffffff;
+}
+
+.refer-btn-primary:hover {
+    background-color: var(--refer-primary-dark);
+    transform: translateY(-2px);
+}
+
+.refer-btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.refer-btn-secondary:hover {
+    background-color: #ffffff;
+    color: var(--refer-secondary);
+    transform: translateY(-2px);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .refer-hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .base-amount {
+        font-size: 1.8rem;
+    }
+
+    .login-card {
+        padding: 35px 20px;
+    }
+
+    .refer-btn-primary,
+    .refer-btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
